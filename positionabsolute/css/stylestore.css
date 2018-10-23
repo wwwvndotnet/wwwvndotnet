@@ -1,0 +1,24 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 0 32px;
+    margin: 0;
+    width: 500px;
+    position: absolute;
+    background: #334793;
+    color: #fff;
+}
+
+#header li {
+    line-height: 2em;
+    margin-right: 15px;
+    list-style-type: none;
+    display: inline;
+}
+
+a:link {
+    text-decoration: none;
+}
