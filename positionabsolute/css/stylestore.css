@@ -1,30 +1,52 @@
-#container{
-    width: 1000px;      /*Rộng 1000px*/
-    margin: 0px auto;   /*Canh giữa màn hình*/
-    text-align: center; /*Text bên trong canh giữa*/
-    font-size: 30px;    /*Font chữ 30px*/
-    color: #FFF;        /*Font màu trắng*/
+* {
+    box-sizing: border-box;
 }
-#header{
-    height: 100px;      /*Cao 100px*/
-    background: blue;   /*Nền màu xanh*/
+
+#container {
+    margin: 0px auto;
+    text-align: center;
+    font-size: 30px;
+    max-width: 1000px;
+    color: #FFF;
 }
-.content{
-    float:right;     /*Nằm bên trái*/
-    width: 700px;   /*Rộng 700px*/
-    height: 300px;  /*Cao 300px*/
-    background: red;/*Nền màu đỏ*/
-}
-.menu{
-    width: 300px;   /*Rộng 300px*/
-    float: left;   /*Nằm bên phải*/
-    height: 300px;  /*Cao 100px*/
-    background: pink;/*Nền màu hồng*/
-}
-#footer{
-    background: gray;
+
+#header {
     height: 100px;
 }
-.clear{
-    clear:both
+
+.content {
+    float: left;
+    width: 90%;
+}
+
+.menu {
+    width: 10%;
+    float: left;
+    font-size: 1vw;
+}
+
+.clear {
+    clear: both
+}
+
+.mix {
+    float: left;
+    width: 24%;
+    text-align: center;
+    border: 3px solid;
+    border-color: #76a7fa;
+    padding: 5px;
+    margin: 0.5%;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 16px;
 }
