@@ -1,24 +1,30 @@
-body {
-    width: 960px;
-    margin: 0 auto;
+#container{
+    width: 1000px;      /*Rộng 1000px*/
+    margin: 0px auto;   /*Canh giữa màn hình*/
+    text-align: center; /*Text bên trong canh giữa*/
+    font-size: 30px;    /*Font chữ 30px*/
+    color: #FFF;        /*Font màu trắng*/
 }
-
-#header {
-    padding: 0 32px;
-    margin: 0;
-    width: 500px;
-    position: absolute;
-    background: #334793;
-    color: #fff;
+#header{
+    height: 100px;      /*Cao 100px*/
+    background: blue;   /*Nền màu xanh*/
 }
-
-#header li {
-    line-height: 2em;
-    margin-right: 15px;
-    list-style-type: none;
-    display: inline;
+.content{
+    float:right;     /*Nằm bên trái*/
+    width: 700px;   /*Rộng 700px*/
+    height: 300px;  /*Cao 300px*/
+    background: red;/*Nền màu đỏ*/
 }
-
-a:link {
-    text-decoration: none;
+.menu{
+    width: 300px;   /*Rộng 300px*/
+    float: left;   /*Nằm bên phải*/
+    height: 300px;  /*Cao 100px*/
+    background: pink;/*Nền màu hồng*/
+}
+#footer{
+    background: gray;
+    height: 100px;
+}
+.clear{
+    clear:both
 }

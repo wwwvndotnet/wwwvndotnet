@@ -1,0 +1,23 @@
+<div class="mix">
+                    <div class="card-img">
+                        <img src="img/sp1" alt="conten san pham 1">
+                    </div>
+                    <div class="card-content black-text">
+                        <h2 class="card-title">
+                            <p>Ten mon an</p>
+                        </h2>
+                        <p class="cuahang">
+                            <a href="#"><strong>Ten cua hang</strong></a>
+                        </p>
+                        <span>250,000</span>VND
+                    </div>
+                </div>
+
+
+
+                <ul>
+                    <li class="item"><a href="index.html">Trang chủ</a></li>
+                    <li class="item"><a href="store.html">Khoá học</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                    <li><a href="https://www.google.com.vn/">Tìm kiếm</a></li>
+                </ul>
