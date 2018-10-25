@@ -1,5 +1,7 @@
 * {
+    padding: 0;
     box-sizing: border-box;
+    margin: 0;
 }
 
 #container {
@@ -40,16 +42,19 @@
 
 .avata>a:first-child {
     position: absolute;
-    padding: 4px;
-    background-color: #e5e5e5;
+    /* padding: 4px; */
+    background-color: black;
     border-radius: 50%;
     top: -90px;
     left: 0;
+    width: 150px;
+    display: inline-block;
 }
 
 .avata>a:first-child>img {
-    max-width: 160px;
+    width: 100%;
     border-radius: 50%;
+    display: block;
 }
 
 .clear {
