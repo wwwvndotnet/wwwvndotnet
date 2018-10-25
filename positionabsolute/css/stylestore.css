@@ -15,14 +15,41 @@
 }
 
 .content {
+    position: relative;
     float: left;
-    width: 90%;
+    width: 80%;
 }
 
 .menu {
-    width: 10%;
-    float: left;
+    width: 100%;
     font-size: 1vw;
+    position: absolute;
+}
+
+#main {
+    width: 20%;
+    float: left;
+    height: 1px;
+}
+
+.avata {
+    background-color: #e5e5e5;
+    padding: 30px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.avata>a:first-child {
+    position: absolute;
+    padding: 4px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    top: -90px;
+    left: 0;
+}
+
+.avata>a:first-child>img {
+    max-width: 160px;
+    border-radius: 50%;
 }
 
 .clear {
@@ -34,7 +61,7 @@
     width: 24%;
     text-align: center;
     border: 3px solid;
-    border-color: #76a7fa;
+    border-color: white;
     padding: 5px;
     margin: 0.5%;
 }
@@ -49,4 +76,46 @@ img {
 
 h2 {
     font-size: 16px;
+}
+
+#chat {
+    position: fixed;
+    right: 160px;
+    bottom: -5px;
+}
+
+#chat img {
+    width: 15%;
+    height: 15%;
+}
+
+.menu ul {
+    background: #8AD385;
+    width: auto;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+.menu li {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+.menu li:hover {
+    background: #CDE2CD;
+}
+
+#main-menu {
+    position: relative;
 }
