@@ -119,3 +119,8 @@ h2 {
 #main-menu {
     position: relative;
 }
+
+.card-content {
+    color: black;
+    text-align: left;
+}
