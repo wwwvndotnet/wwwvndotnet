@@ -1,0 +1,98 @@
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    min-height: 100%;
+		font-family: Open Sans;
+    background-color: #00BCD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    }
+#header {
+	background-color: #0097A7;
+	min-height:20px;
+	width:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	padding: 15px;
+	z-index: 2;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+#name-logo{
+	float: left;
+  width:280px;
+}
+#menu{
+	float: right;
+	margin-right: 40px;
+}
+a {
+  text-decoration: none; 
+  color: #fff}
+#menu a:hover, #name-logo a:hover {
+	color: #B2EBF2;
+	font-weight: bold;
+	padding-bottom:5px;
+	border-bottom: 2px dashed #B2EBF2;
+}
+@media only screen and (max-width: 609px) {
+    #header {display:none;}
+		h1 {font-size: 20px;}
+		h3 {font-size: 15px;}
+		#name-logo {width:100%; text-align:center;}
+	#menu {width:100%; text-align:center;margin:0px;}
+}
+@media only screen and (max-height: 500px)
+{
+  #header {display:none;}
+}
+h1 {
+	font-size: 35px; 
+	text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  text-shadow: 3px 3px 13px rgba(255, 87, 34, 1);
+}
+.caculator {
+	width:300px;
+	margin:auto;
+	text-align: right;
+  border: 2px dashed #fff;
+  border-radius: 20px;
+}
+#screen, #screen2 {
+  height:30px;
+  margin:10px;
+  margin-left:20px;
+  margin-right:20px;
+  padding: 10px 20px 10px 10px;
+  background-color: #B2EBF2;
+  border-radius: 5px;
+  color: #212121;
+  font-size:20px;
+}
+
+#buttonwrap {
+  width:90%;
+  height:250px;
+  margin:auto;
+  font-weight: bold;
+}
+.button {
+  margin:10px;
+  width:35px;
+  float:left;
+  border: 1px dotted #fff;
+  border-radius:5px;
+  padding: 5px;
+  cursor: pointer;
+  text-align:center;
+}
+.red {
+	color: #FF5722;
+}

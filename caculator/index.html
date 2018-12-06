@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css-index.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="caculator">
+    <h1>Caculator</h1>
+    <div id="screen"></div>
+    <div id="screen2"></div>
+    <div id="buttonwrap">
+
+      <div onclick="ac()" class="button ac"><span class="red">AC</span></div>
+
+      <div onclick="Del()" class="button del">Del</div>
+      <div onclick="daygiatri('%')" class="button dau">%</div>
+      <div onclick="daygiatri('*')" class="button dau">X</div>
+      <div onclick="daygiatri(1)" class="button so">1</div>
+      <div onclick="daygiatri(2)" class="button so">2</div>
+      <div onclick="daygiatri(3)" class="button so">3</div>
+      <div onclick="daygiatri('÷')" class="button dau">÷</div>
+      <div onclick="daygiatri(4)" class="button so">4</div>
+      <div onclick="daygiatri(5)" class="button so">5</div>
+      <div onclick="daygiatri(6)" class="button so">6</div>
+      <div onclick="daygiatri('-')" class="button dau">-</div>
+      <div onclick="daygiatri(7)" class="button so">7</div>
+      <div onclick="daygiatri(8)" class="button so">8</div>
+      <div onclick="daygiatri(9)" class="button so">9</div>
+      <div onclick="daygiatri('+')" class="button dau">+</div>
+      <div onclick="daygiatri('.')" class="button so">.</div>
+      <div onclick="daygiatri(0)" class="button so">0</div>
+      <div onclick="ra('')" class="button canbac2">&radic;</div>
+      <div onclick="giaithua()" class="button giaithua">!</div>
+      <div onclick="binhphuong()" class="button binhphuong">^2</div>
+      <div onclick="lapphuong()" class="button lapphuong">^3</div>
+      <div onclick="ketqua()" class="button equal"><span class="red">=</span></div>
+    </div>
+  </div>
+  <script>
+
+    var so = document.getElementById("screen");
+    var equal = document.getElementById("screen2");
+  
+    function daygiatri(n) {
+      so.innerHTML+=n;
+    }
+
+    function ac(){
+      so.innerHTML = "";
+      equal.innerHTML = "";
+    }
+
+    function Del(){
+      so.innerHTML=so.innerHTML.slice(0, so.innerHTML.length-1)
+    }
+
+    function ra() {
+       kq = Math.sqrt(so.innerHTML);
+       equal.innerHTML = kq; 
+    }
+
+    function binhphuong(){
+      kq = Math.pow(so.innerHTML,2);
+       equal.innerHTML = kq; 
+    }
+
+    function lapphuong(){
+      kq = Math.pow(so.innerHTML,3);
+       equal.innerHTML = kq; 
+    }
+
+    function giaithua() {
+      var giaithua=1;
+      for (var i=1 ; i<=so.innerHTML; i++) {
+        giaithua=giaithua*i;
+        kq = giaithua;
+      }
+      equal.innerHTML = kq;
+    }
+  
+    function ketqua(){
+      let phantram = so.innerHTML.indexOf('%');
+  
+      if(phantram>0){
+        let re = so.innerHTML.replace(/%/g, "/100");
+        kq = eval(re);
+        equal.innerHTML = kq;
+      } else{
+        kq = eval(so.innerHTML);
+        equal.innerHTML = kq
+      }
+  
+    }
+  </script>
+
+</body>
+
+</html>
